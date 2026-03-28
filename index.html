@@ -275,6 +275,57 @@
       color: var(--pencil);
       font-family: var(--sans);
     }
+
+    /* ─── MOBILE ──────────────────────────── */
+    @media (max-width: 600px) {
+      .cover {
+        padding: 8vw;
+        padding-top: 20vw;
+        padding-bottom: 80px;
+        justify-content: flex-start;
+      }
+
+      .cover::before {
+        top: 16px; left: 16px; right: 16px; bottom: 16px;
+      }
+
+      .cover-nav {
+        position: static;
+        margin-top: 48px;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .parsha {
+        padding: 14vw 6vw;
+      }
+
+      .parsha-meta {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 32px;
+      }
+
+      .parsha-index {
+        writing-mode: horizontal-tb;
+      }
+
+      .parsha-text {
+        margin-bottom: 40px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 48px 6vw;
+      }
+
+      #lightbox-close {
+        top: 20px;
+        left: 20px;
+      }
+    }
   </style>
 </head>
 <body>
